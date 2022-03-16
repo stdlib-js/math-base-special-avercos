@@ -1,6 +1,6 @@
 {
   "name": "@stdlib/math-base-special-avercos",
-  "version": "0.0.7",
+  "version": "0.0.0",
   "description": "Compute the inverse versed cosine.",
   "license": "Apache-2.0",
   "author": {
