@@ -41,32 +41,30 @@ The [inverse versed cosine][inverse-versed-cosine] is defined as
 
 <!-- /.intro -->
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/math-base-special-avercos
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm` branch][esm-url].
+-   If you are using Deno, visit the [`deno` branch][deno-url].
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd` branch][umd-url].
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
-To use in Observable,
-
 ```javascript
-avercos = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-avercos@umd/bundle.js' )
-```
-
-To include the bundle in a webpage,
-
-```html
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-avercos@umd/bundle.js"></script>
-```
-
-If no recognized module system is present, access bundle contents via the global scope:
-
-```html
-<script type="text/javascript">
-(function () {
-    window.avercos;
-})();
-</script>
+var avercos = require( '@stdlib/math-base-special-avercos' );
 ```
 
 #### avercos( x )
@@ -107,14 +105,9 @@ v = avercos( NaN );
 
 <!-- eslint no-undef: "error" -->
 
-```html
-<!DOCTYPE html>
-<html lang="en">
-<body>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/array-base-linspace@umd/bundle.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-avercos@umd/bundle.js"></script>
-<script type="text/javascript">
-(function () {
+```javascript
+var linspace = require( '@stdlib/array-base-linspace' );
+var avercos = require( '@stdlib/math-base-special-avercos' );
 
 var x = linspace( -2.0, 0.0, 100 );
 
@@ -122,11 +115,6 @@ var i;
 for ( i = 0; i < x.length; i++ ) {
     console.log( avercos( x[ i ] ) );
 }
-
-})();
-</script>
-</body>
-</html>
 ```
 
 </section>
@@ -213,6 +201,7 @@ Copyright &copy; 2016-2022. The Stdlib [Authors][stdlib-authors].
 [deno-url]: https://github.com/stdlib-js/math-base-special-avercos/tree/deno
 [umd-url]: https://github.com/stdlib-js/math-base-special-avercos/tree/umd
 [esm-url]: https://github.com/stdlib-js/math-base-special-avercos/tree/esm
+[branches-url]: https://github.com/stdlib-js/math-base-special-avercos/blob/main/branches.md
 
 [stdlib-license]: https://raw.githubusercontent.com/stdlib-js/math-base-special-avercos/main/LICENSE
 
@@ -220,9 +209,9 @@ Copyright &copy; 2016-2022. The Stdlib [Authors][stdlib-authors].
 
 <!-- <related-links> -->
 
-[@stdlib/math/base/special/aversin]: https://github.com/stdlib-js/math-base-special-aversin/tree/umd
+[@stdlib/math/base/special/aversin]: https://github.com/stdlib-js/math-base-special-aversin
 
-[@stdlib/math/base/special/versin]: https://github.com/stdlib-js/math-base-special-versin/tree/umd
+[@stdlib/math/base/special/versin]: https://github.com/stdlib-js/math-base-special-versin
 
 <!-- </related-links> -->
 
