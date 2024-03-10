@@ -14,6 +14,7 @@
     }
   ],
   "main": "./lib",
+  "gypfile": false,
   "directories": {
     "benchmark": "./benchmark",
     "doc": "./docs",
@@ -40,7 +41,7 @@
   },
   "dependencies": {
     "@stdlib/math-base-napi-unary": "^0.2.1",
-    "@stdlib/math-base-special-acos": "^0.2.1",
+    "@stdlib/math-base-special-acos": "^0.2.2",
     "@stdlib/utils-library-manifest": "^0.2.1"
   },
   "devDependencies": {
